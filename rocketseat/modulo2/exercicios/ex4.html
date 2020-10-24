@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex4</title>
+</head>
+<body>
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+    
+    <script>
+        var lista = document.createElement('ul');
+        lista.append(["Diego", "Gabriel", "Lucas"]);
+        var botao = document.querySelector('button');
+        
+        botao.onclick = function(){
+        var nome = document.querySelector('input');
+        lista.append(nome.value);
+        console.log(lista);
+        }
+        
+        
+
+    </script>
+</body>
+</html>

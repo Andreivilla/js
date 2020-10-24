@@ -1,0 +1,37 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex2</title>
+</head>
+<body>
+    <div id="app">
+        <div class="box"></div>
+    </div>
+    <script>
+        var botao = document.createElement('button');
+        botao.setAttribute('type', 'button');
+        botao.appendChild(document.createTextNode('criar quadrado'));
+        document.body.appendChild(botao);
+        
+        botao.onclick = function quadrado(){
+            var boxElement = document.querySelector('.box')//document.createElement('box')
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.margin = 10;
+            boxElement.style.backgroundColor = getRandomColor();
+            document.body.appendChild(boxElement);
+            console.log(boxElement);
+        }
+
+        function getRandomColor(){
+            var letters = "0123456789ABCDEF";  
+            var color = "#";  
+            for(var i = 0; i < 6; i++){    
+                color += letters[Math.floor(Math.random() * 16)];
+            }  
+            return color;
+        }
+    </script>
+</body>
+</html>
