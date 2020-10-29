@@ -5,6 +5,19 @@ que foi paga e o valor da anuidade. Aanuidade deve ser paga
 no mês de janeiro. Por mês, é cobrado 5% de juros 
 (sob o regime de juroscompostos). O retorno deve ser o 
 valor a ser pago para o respectivo mês escolhido.*/
-function anuidade(mes){
-    
+function juroComposto(valor, tempo){
+    for(let i=0; i<tempo;  i++){
+        valor *= 1.05
+    }
+    return valor
 }
+function anuidade(mes, valor){
+    if(mes <= 2 && mes > 0){
+        return `Anuidade: ${valor}`
+    }else if(mes>2 && mes<12){
+        return `Anuidade: ${juroComposto(valor, mes-1).toFixed(2)}`
+    }else{
+        return 'Valor invalido'
+    }
+}
+console.log(anuidade(4, 100))
