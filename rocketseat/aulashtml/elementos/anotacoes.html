@@ -1,0 +1,136 @@
+<!--
+    Cabeçalhos e paragrafos
+-->
+<h1>titulo principal</h1>
+<p>orem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+<p>Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing</p>
+
+<h2>segundo nivel de importancia</h2>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing
+
+<!--
+    listas
+
+    -ordenadas
+    -não ordenadas
+-->
+<h2>ingrdientes</h2>
+<ol><!--lista ordenada-->
+    <li>1 banana</li>
+    <li>1 colher de chá de canela</li>
+    <li>200 ml de leite de soja</li>
+    <li>2 colheres de chá de farelo de aveia</li>
+    <li>1 colher de sopa de cacau</li>
+    <li>½ scoop de Whey Protein sabor baunilha</li>
+</ol>
+<ul><!--lista não ordenada-->
+    <li>1 banana</li>
+    <li>1 colher de chá de canela</li>
+    <li>200 ml de leite de soja</li>
+    <li>2 colheres de chá de farelo de aveia</li>
+    <li>1 colher de sopa de cacau</li>
+    <li>½ scoop de Whey Protein sabor baunilha</li>
+</ul>
+<!--
+    citações
+    
+    <blockquot>
+    <cite>
+    <q>    
+-->
+
+<blockquote cite="https://pt.wikipedia.org/wiki/Molon_labe"> citação  <em>Molon labe</em> </blockquote>
+
+<p>de acordo com <a href="https://pt.wikipedia.org/wiki/Molon_labe">Wikipedia</a>: Molon labe</p>
+
+<q>citações curtas que não precisam de quebra paragrafo <a href="https://pt.wikipedia.org/wiki/Molon_labe"><cite>wikipedia </cite></a></q>
+
+<!--
+    Aebreviações
+    <abbr>
+-->
+<p>passe o cursor no: <abbr title="tag html para informaçõesrapidas">abbr</abbr></p>
+
+<!--
+    DEtalhes de contato para autor do html
+-->
+<address>
+    <p>
+        Andrei villa <br>
+        <strong>Laguna SC</strong>
+    </p>
+</address>
+<!--
+    Listas de descrição
+-->
+<h2>Lista de descrição</h2>
+<dl>
+    <dt>elemento</dt>
+    <dd>descrição do elemento</dd>
+
+    <dt>Hypertext</dt>
+    <dd>é um hiper testo compossibilidades</dd>
+</dl>
+
+<!--
+    representrando codegos
+    <code>
+        partes genericas e curtas de codio
+    <pre>
+        Blocosdecodigo mais complexo, mantem espaços e tabs
+-->
+<p>
+    <h2>tags de codigo</h2>
+    codigo simples: <code> printf("hello html") </code><br>
+    <pre>
+    void OrdernarVetor(int *vetorN, int tamanho){
+        int i, j;
+        int aux;
+
+        for(i = 0; i < 5; i++){
+            for(j = 0; j < 5; j++){
+                if(vetorN[i] > vetorN[j]){
+                    aux = vetorN[i];
+                    vetorN[i] = vetorN[j];
+                    vetorN[j] = aux;
+                }
+            }
+        }
+    }
+    </pre>
+</p>
+<!--
+    Elementos genericos
+    - <div>
+        para blocos
+    - <span>
+        para linhas
+-->
+<div class="cart1">
+    <span>camiseta</span>
+    <span>$ 50,00</span>
+</div>
+<div class="cart2">
+    <span>livro</span>
+    <span>$ 35,00</span>
+</div>
+
+<!--
+    Hyperlinks - elemento Ancora <a>
+
+    anatomia
+    atributos
+        -globais
+        -href
+            camimha para onde a ttag a aponta explo:
+            -links
+            -fragmentos
+            -email
+            -telefone
+            -outros
+    -downlad
+    -target
+        - _sellf(padrao)
+        - _bank abre em nova aba
+-->
+<p>Encontre-me</p>
