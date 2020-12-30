@@ -1,0 +1,67 @@
+/*anatomia basica*/
+h1{
+    color: rebeccapurple;
+    font-size: 60px;
+}
+/*  seletores
+    * Global selector '*'
+    * Element/Type selector 'h1, h2, p, div'
+    * ID Selector '#box, #container' 
+    * Class Selector '.red, .m-4'
+    * Attribute selector, Pseudo-class, Pseudo-element, outros...
+*/
+/*Elemet*/
+h2 {
+    color: green;
+}
+/*Global*/
+* {
+    margin: 10px;
+}
+/*ID*/
+#seletorID {
+    color: brown;
+}
+/*SeletorClass*/
+.SeletorClass {
+    color: black;
+}
+/*
+especificidade
+    0. Universal selector, combinators negation pseudo-class (:not())
+    1. Element type selector e pseudo-elements (::before, ::after)
+    10. Classes e asttribute selector ([type="radio"])
+    100. ID selector
+    1000. inline
+*/
+
+/*At-rules*/
+/*
+@import incluir um CSS externo
+@media regras condicionais para dispositivos
+@font-face fontes externas
+@keyfeames animations
+*/
+
+/*Shorthand*/
+/*
+background
+    background-color: #000;
+    background-image: url(images/bg.gif);'
+    background-repeat: no-repeat;
+    background-position: left top;
+
+Shorthand
+    background: #000 erl(images/bg.gif) no-repeat left top;
+*/
+/*
+font
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.2;
+    font-family: Arial, sans-seriaf;
+
+shorthand
+    font: italic bold .8em/1.2 Arial, sans-serif;
+*/
